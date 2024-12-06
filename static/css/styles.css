@@ -41,6 +41,18 @@
     height: 100%;
 }
 
+.cont-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt-title{
+    font-size: 40px;
+    margin: 35px;
+    margin-bottom: -5px;
+}
+
 .cont-cajas {
     padding: 20px 150px;
     display: flex;
@@ -66,7 +78,7 @@
 
 .cont-inputs {
     width: 200px;
-    margin: 60px;
+    margin: 45px;
     display: flex;
     flex-direction: column;
     border: 1px solid var(--color-borde);
@@ -91,7 +103,7 @@
 
 .cont-resultado {
     width: 200px;
-    margin: 50px;
+    margin: 45px;
     display: flex;
     flex-direction: column;
     border: 1px solid var(--color-borde);
@@ -114,7 +126,7 @@
 }
 
 .boton-calcular {
-    height: 60px;
+    height: 45px;
     width: 150px;
 }
 
