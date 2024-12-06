@@ -1,14 +1,48 @@
-.navbar{
-    color: #ccc;
-    background-color: rgb(15, 125, 228);
+:root {
+    /* Colores para el modo claro */
+    --color-fondo: rgb(15, 125, 228); /* Fondo de la navbar */
+    --color-texto: #ccc; /* Color del texto */
+    --color-borde: #ccc; /* Color de los bordes */
+    --color-fondo-footer: #f8f9fa; /* Fondo del footer */
+    --color-texto-footer: #555; /* Texto en el footer */
+    --color-enlace-footer: #007bff; /* Enlaces en el footer */
+    --color-enlace-hover-footer: #0056b3; /* Color del enlace al pasar el mouse */
+    --color-checkbox: #ccc; /* Color del checkbox */
+    
+    /* Colores para el modo oscuro */
+    --color-fondo-oscuro: #333;
+    --color-texto-oscuro: #e0e0e0;
+    --color-borde-oscuro: #666;
+    --color-fondo-footer-oscuro: #222;
+    --color-texto-footer-oscuro: #ccc;
+    --color-enlace-footer-oscuro: #66c7ff;
+    --color-enlace-hover-footer-oscuro: #3399ff;
+    --color-checkbox-oscuro: #666;
 }
 
-.cont-main{
+[data-theme="dark"] {
+    /* Colores para el modo oscuro */
+    --color-fondo: var(--color-fondo-oscuro);
+    --color-texto: var(--color-texto-oscuro);
+    --color-borde: var(--color-borde-oscuro);
+    --color-fondo-footer: var(--color-fondo-footer-oscuro);
+    --color-texto-footer: var(--color-texto-footer-oscuro);
+    --color-enlace-footer: var(--color-enlace-footer-oscuro);
+    --color-enlace-hover-footer: var(--color-enlace-hover-footer-oscuro);
+    --color-checkbox: var(--color-checkbox-oscuro);
+}
+
+.navbar {
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+}
+
+.cont-main {
     height: 100%;
 }
 
-.cont-cajas{
-    padding: 20px 150px 20px 150px;
+.cont-cajas {
+    padding: 20px 150px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -20,32 +54,32 @@
     height: 100px;
     width: 85%;
     border: none;
-    outline: none; /* Esto elimina los bordes al hacer foco */
+    outline: none;
     font-size: 45px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--color-borde);
 }
 
-.porcentajes{
+.porcentajes {
     font-size: 35px;
     border: none;
 }
 
-.cont-inputs{
+.cont-inputs {
     width: 200px;
-    margin: 25px;
+    margin: 60px;
     display: flex;
     flex-direction: column;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-borde);
     border-radius: 7px;
     align-items: center;
     justify-content: center;
 }
 
-.cont-main-resultado{
+.cont-main-resultado {
     height: 100%;
 }
 
-.cont-resultados{
+.cont-resultados {
     width: 100%;
     padding: 20px;
     display: flex;
@@ -55,34 +89,80 @@
     justify-content: center;
 }
 
-
-.cont-resultado{
+.cont-resultado {
     width: 200px;
-    margin: 25px;
+    margin: 50px;
     display: flex;
     flex-direction: column;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-borde);
     border-radius: 7px;
     align-items: center;
     justify-content: center;
 }
 
-.resultado{
+.resultado {
     height: 150px;
     width: 85%;
     font-size: 60px;
     border: none;
 }
 
-.idioma{
+.idioma {
     border: 1px solid #9b9b9b;
     padding: 10px;
     border-radius: 7px;
 }
 
-.boton-calcular{
-    height: 50px;
+.boton-calcular {
+    height: 60px;
     width: 150px;
-    border: 1px solid #9b9b9b;
-    border-radius: 7px;
+}
+
+.cont-nav-porcentaje {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Aplica un scroll al dropdown-menu */
+#notasDropdown {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#notasDropdown::-webkit-scrollbar {
+    width: 8px;
+}
+
+#notasDropdown::-webkit-scrollbar-thumb {
+    background-color: var(--color-borde);
+    border-radius: 4px;
+}
+
+#notasDropdown::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: var(--color-checkbox);
+}
+
+#footer {
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--color-fondo-footer);
+}
+
+#footer p {
+    color: var(--color-texto-footer);
+    font-size: 14px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: var(--color-enlace-footer);
+}
+
+#footer a:hover {
+    color: var(--color-enlace-hover-footer);
 }
