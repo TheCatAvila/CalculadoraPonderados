@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de promedios ponderados</title>
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Cantidad de notas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                <li><a class="dropdown-item" href="#">Link 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Porcentaje ON</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-item dropdown idioma">
+          <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+            ES
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item active" href="#">ES</a></li>
+            <li><a class="dropdown-item" href="#">EN</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+      <div class="row cont-main">
+        <div class="col-md-12 cont-cajas">
+          <!-- Input Caja 1 -->
+          <div class="cont-inputs">
+            <input type="number" class=" text-center inputs" name="caja1" placeholder="Nota 1">
+            <input type="number" class=" text-center inputs porcentajes" name="caja1" placeholder="%">
+          </div>
+          <!-- Input Caja 2 -->
+          <div class="cont-inputs">
+            <input type="number" class=" text-center inputs" name="caja1" placeholder="Nota 2">
+            <input type="number" class=" text-center inputs porcentajes" name="caja1" placeholder="%">
+          </div>
+          <!-- Input Caja 3 -->
+          <div class="cont-inputs">
+            <input type="number" class=" text-center inputs" name="caja1" placeholder="Nota 3">
+            <input type="number" class=" text-center inputs porcentajes" name="caja1" placeholder="%">
+          </div>
+          <!-- Input Caja 4 -->
+          <div class="cont-inputs">
+            <input type="number" class=" text-center inputs" name="caja1" placeholder="Nota 4">
+            <input type="number" class=" text-center inputs porcentajes" name="caja1" placeholder="%">
+          </div>
+        </div>
+      </div>
+      <!-- Botón de envío -->
+      <div class="row text-center">
+        <div class="col-md-12">
+          <button type="submit" class="boton-calcular">Calcular</button>
+        </div>
+      </div>
+      <!-- Resultado -->
+      <div class="row cont-main-resultado">
+        <div class="col-md-12 cont-resultados">
+          <div class="cont-resultado">
+            <input type="txt" class=" text-center resultado" name="caja1" placeholder="00">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+
+  <footer style="width: 100%; background-color: black; height: 200px;">
+
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

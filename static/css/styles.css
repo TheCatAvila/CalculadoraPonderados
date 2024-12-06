@@ -1,0 +1,88 @@
+.navbar{
+    color: #ccc;
+    background-color: rgb(15, 125, 228);
+}
+
+.cont-main{
+    height: 100%;
+}
+
+.cont-cajas{
+    padding: 20px 150px 20px 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs {
+    height: 100px;
+    width: 85%;
+    border: none;
+    outline: none; /* Esto elimina los bordes al hacer foco */
+    font-size: 45px;
+    border-bottom: 1px solid #ccc;
+}
+
+.porcentajes{
+    font-size: 35px;
+    border: none;
+}
+
+.cont-inputs{
+    width: 200px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-main-resultado{
+    height: 100%;
+}
+
+.cont-resultados{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cont-resultado{
+    width: 200px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultado{
+    height: 150px;
+    width: 85%;
+    font-size: 60px;
+    border: none;
+}
+
+.idioma{
+    border: 1px solid #9b9b9b;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.boton-calcular{
+    height: 50px;
+    width: 150px;
+    border: 1px solid #9b9b9b;
+    border-radius: 7px;
+}
