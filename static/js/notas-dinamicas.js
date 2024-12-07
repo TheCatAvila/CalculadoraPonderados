@@ -59,13 +59,22 @@ function crearInput(type, name, placeholder, className) {
   return input;
 }
 
+// Función para crear un enlace
+function crearLink(name, value, className) {
+  const link = document.createElement('a');
+  link.textContent = value; // Texto que muestra el enlace
+  link.href = '#'; // Hacer clic en el enlace no recarga la página
+  link.className = className; // Clase CSS
+  link.setAttribute('data-value', name); // Atributo personalizado para identificar el valor
+  return link;
+}
+
 // Generar opciones del dropdown
 function generarOpcionesDropdown(min = 2, max = 30) {
+  notasDropdown.innerHTML = ''; // Limpia el dropdown
   for (let i = min; i <= max; i++) {
     const listItem = document.createElement('li');
-    const anchor = crearInput('a', '', `${i} notas`, 'dropdown-item');
-    anchor.href = '#';
-    anchor.setAttribute('value', i);
+    const anchor = crearLink(i, `${i} notas`, 'dropdown-item');
     listItem.appendChild(anchor);
     notasDropdown.appendChild(listItem);
   }
@@ -76,7 +85,7 @@ checkPorcentaje.addEventListener('change', () => generarNotas(contenedorInputs.c
 notasDropdown.addEventListener('click', (event) => {
   if (event.target.classList.contains('dropdown-item')) {
     event.preventDefault();
-    generarNotas(parseInt(event.target.getAttribute('value')));
+    generarNotas(parseInt(event.target.getAttribute('data-value')));
   }
 });
 botonCalcular.addEventListener('click', (event) => {
