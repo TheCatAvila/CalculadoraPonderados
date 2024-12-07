@@ -1,18 +1,22 @@
 :root {
     /* Colores para el modo claro */
-    --color-fondo: rgb(15, 125, 228); /* Fondo de la navbar */
-    --color-texto: #ccc; /* Color del texto */
+
     --color-borde: #ccc; /* Color de los bordes */
+    --color-fondo: #fff; /* Fondo del footer */
+    --color-texto-title: #131313; /* Color del texto */
     --color-fondo-footer: #f8f9fa; /* Fondo del footer */
     --color-texto-footer: #555; /* Texto en el footer */
     --color-enlace-footer: #007bff; /* Enlaces en el footer */
     --color-enlace-hover-footer: #0056b3; /* Color del enlace al pasar el mouse */
     --color-checkbox: #ccc; /* Color del checkbox */
+    --color-texto-correo: #111111;
     
     /* Colores para el modo oscuro */
+    --color-btn-oscuro: #222;
     --color-fondo-oscuro: #333;
     --color-texto-oscuro: #e0e0e0;
-    --color-borde-oscuro: #666;
+    --color-borde-oscuro: #e0e0e0;
+    --color-texto-title-oscuro: #f3f3f3;
     --color-fondo-footer-oscuro: #222;
     --color-texto-footer-oscuro: #ccc;
     --color-enlace-footer-oscuro: #66c7ff;
@@ -20,21 +24,42 @@
     --color-checkbox-oscuro: #666;
 }
 
+body, main{
+    background-color: var(--color-fondo);
+}
+
 [data-theme="dark"] {
     /* Colores para el modo oscuro */
     --color-fondo: var(--color-fondo-oscuro);
     --color-texto: var(--color-texto-oscuro);
     --color-borde: var(--color-borde-oscuro);
+    --color-boton: var(--color-btn-oscuro);
+    --color-texto-title: var(--color-texto-title-oscuro);
     --color-fondo-footer: var(--color-fondo-footer-oscuro);
     --color-texto-footer: var(--color-texto-footer-oscuro);
     --color-enlace-footer: var(--color-enlace-footer-oscuro);
     --color-enlace-hover-footer: var(--color-enlace-hover-footer-oscuro);
     --color-checkbox: var(--color-checkbox-oscuro);
+    --color-texto-correo: var(--color-texto-oscuro)
+}
+
+.text-dark{
+    color: var(--color-texto-correo) !important;
+}
+
+.btn{
+    background-color: var(--color-btn);
+    border-color: var(--color-borde);
+    color: var(--color-texto);
 }
 
 .navbar {
-    color: var(--color-texto);
-    background-color: var(--color-fondo);
+    color: var(--color-texto) !important;
+    background-color: var(--color-fondo-footer) !important;
+}
+
+.txt-navbar{
+    color: var(--color-texto) !important;
 }
 
 .cont-main {
@@ -51,6 +76,7 @@
     font-size: 40px;
     margin: 35px;
     margin-bottom: -5px;
+    color: var(--color-texto-title);
 }
 
 .cont-cajas {
@@ -69,6 +95,8 @@
     outline: none;
     font-size: 45px;
     border-bottom: 1px solid var(--color-borde);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
 }
 
 .porcentajes {
@@ -117,6 +145,12 @@
     width: 85%;
     font-size: 60px;
     border: none;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+.logo{
+    color: var(--color-texto);
 }
 
 .idioma {
@@ -162,11 +196,11 @@ input[type="checkbox"]:checked {
     bottom: 0;
     width: 100%;
     padding: 20px 0;
-    background-color: var(--color-fondo-footer);
+    background-color: var(--color-fondo-footer) !important;
 }
 
 #footer p {
-    color: var(--color-texto-footer);
+    color: var(--color-texto-footer) !important;
     font-size: 14px;
 }
 
