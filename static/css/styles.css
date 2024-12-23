@@ -212,3 +212,142 @@ input[type="checkbox"]:checked {
 #footer a:hover {
     color: var(--color-enlace-hover-footer);
 }
+
+@media (max-width: 768px) {
+
+    .cont-cajas {
+        padding: 20px 20px;
+    }
+
+    .cont-resultados {
+        padding: 20px 20px;
+    }
+
+    .cont-resultado {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .cont-inputs {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .inputs {
+        width: 100%;
+    }
+
+    .resultado {
+        width: 100%;
+    }
+
+    .cont-title {
+        padding: 20px;
+    }
+
+    .txt-title {
+        font-size: 30px;
+    }
+
+    .cont-main {
+        padding: 20px;
+    }
+
+    .cont-main-resultado {
+        padding: 20px;
+    }
+
+    .cont-nav-porcentaje {
+        flex-direction: column;
+    }
+
+    .boton-calcular {
+        width: 100%;
+    }
+
+    .cont-resultado {
+        width: 100%;
+    }
+
+    .cont-inputs {
+        width: 100%;
+    }
+
+    .inputs {
+        width: 100%;
+    }
+
+    .resultado {
+        width: 100%;
+    }
+
+    .cont-cajas {
+        padding: 20px 20px;
+    }
+
+    .cont-resultados {
+        padding: 20px 20px;
+    }
+
+    .cont-resultado {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .cont-inputs {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .inputs {
+        width: 100%;
+    }
+
+    .resultado {
+        width: 100%;
+    }
+
+    .cont-title {
+        padding: 20px;
+    }
+
+    .txt-title {
+        font-size: 30px;
+    }
+
+    .cont-main {
+        padding: 20px;
+    }
+
+    .cont-main-resultado {
+        padding: 20px;
+    }
+
+    .cont-nav-porcentaje {
+        flex-direction: column;
+    }
+
+    .boton-calcular {
+        width: 100%;
+    }
+
+    .cont-resultado {
+        width: 100%;
+    }
+
+    .cont-inputs {
+        width: 100%;
+    }
+
+    .inputs {
+        width: 100%;
+    }
+
+    .resultado {
+        width: 100%;
+    }
+
+    .cont-cajas {
+        padding: 20px 20px;
+    }
+}
